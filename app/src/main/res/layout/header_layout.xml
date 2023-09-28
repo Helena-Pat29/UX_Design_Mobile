@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#A4D3FF">
+
+    <!-- Burger Menu Icon -->
+    <ImageView
+        android:id="@+id/burger_menu_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_menu_24"
+        android:contentDescription="@string/menu_description" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+    <!-- User Avatar -->
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/baseline_supervised_user_circle_24"
+        android:contentDescription="@string/user_avatar_description"
+        android:layout_gravity="end"
+        android:padding="8dp" />
+
+</androidx.appcompat.widget.Toolbar>

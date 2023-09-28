@@ -9,6 +9,49 @@
     <string name="agitar_opcion">Agitar teléfono</string>
     <string name="guardar">Guardar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="crear_alarma_title">Crear Alarma</string>
+    <string name="crear_button_text">Crear</string>
+
+    <string name="personalizar_alarma_title">Personalizar Alarma</string>
+    <string name="personalizar_button_text">Personalizar</string>
+
+    <string name="editar_alarma_title">Editar Alarma</string>
+    <string name="editar_button_text">Editar</string>
+
+    <string name="detener_alarma_title">Detener Alarma</string>
+    <string name="detener_button_text">Detener</string>
+    <string name="menu_description">Burger menu for navigation</string>
+    <string name="user_avatar_description">User avatar</string>
+    <string-array name="hours">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="minutes">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <!-- ... continue up to 59 -->
+        <item>59</item>
+    </string-array>
+
+    <string-array name="ampm">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
 
 
 </resources>

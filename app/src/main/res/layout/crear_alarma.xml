@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Including the Toolbar Layout -->
+    <include layout="@layout/header_layout" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:spacing="16dp">
+
+            <!-- App Body -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Left Column -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Alarma Name Input -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre de alarma"
+                        android:textColor="#0B68CB"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"  />
+
+                    <EditText
+                        android:id="@+id/alarmName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre de alarma"
+                        android:padding="10dp"
+                        android:textSize="16sp" />
+
+                    <!-- Date Selection -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selecciona la fecha de alarma"
+                        android:textColor="#0B68CB"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#BADAFF"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Spinner
+                            android:id="@+id/daySpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp" />
+
+                        <Spinner
+                            android:id="@+id/monthSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp" />
+                        <Spinner
+                            android:id="@+id/yearSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp" />
+                    </LinearLayout>
+                    <!-- Time Selection Layout -->
+                    <LinearLayout
+                        android:id="@+id/time_selection"
+                        android:layout_width="404dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="#BADAFF"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:showDividers="middle">
+
+                        <Spinner
+                            android:id="@+id/hourSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp" />
+
+                        <Spinner
+                            android:id="@+id/minuteSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp" />
+
+                        <Spinner
+                            android:id="@+id/amPmSpinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Right Column -->
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Configuraciones adicionales"
+                android:textColor="#0B68CB"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/repeatToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repetir" />
+
+            <Switch
+                android:id="@+id/soundToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sonido" />
+
+            <Switch
+                android:id="@+id/snoozeToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Posponer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:spacing="8dp">
+
+                <Button
+                    android:id="@+id/customizeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0B68CB"
+                    android:text="Personalizar" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0B68CB"
+                    android:text="Cancelar" />
+
+                <Button
+                    android:id="@+id/createButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0B68CB"
+                    android:text="Crear" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
