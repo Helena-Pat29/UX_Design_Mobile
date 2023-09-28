@@ -2,6 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary_title_color">#0B68CB</color>
+    <color name="date_picker_bg">#BADAFF</color>
+    <color name="card_button_color">#0072DB</color>
+    <color name="card_content_color">#BED6FE</color>
+    <color name="toggle_on_color">#1368CB</color>
+    <color name="toggle_off_color">#5BA8EF</color>
+    <color name="general_button_color">#5BA8EF</color>
+    <color name="header_background">#FFFFFF</color>
     <color name="blue_dark">#0072DB</color>
     <color name="blue_medium">#A4D3FF</color>
     <color name="blue_light">#DBE8FD</color>

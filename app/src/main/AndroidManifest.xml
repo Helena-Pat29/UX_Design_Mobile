@@ -22,6 +22,9 @@
             android:name=".Personalizar"
             android:exported="false" />
         <activity
+            android:name=".CrearAlarmaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

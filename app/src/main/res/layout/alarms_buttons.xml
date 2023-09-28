@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:columnCount="2">
+
+    <!-- Crear Alarma Card -->
+    <include
+        android:id="@+id/crear_alarma_card"
+        layout="@layout/alarm_card_layout" />
+
+    <!-- Personalizar Alarma Card -->
+    <include
+        android:id="@+id/personalizar_alarma_card"
+        layout="@layout/alarm_card_layout" />
+
+    <!-- Editar Alarma Card -->
+    <include
+        android:id="@+id/editar_alarma_card"
+        layout="@layout/alarm_card_layout" />
+
+    <!-- Detener Alarma Card -->
+    <include
+        android:id="@+id/detener_alarma_card"
+        layout="@layout/alarm_card_layout" />
+
+</GridLayout>
+

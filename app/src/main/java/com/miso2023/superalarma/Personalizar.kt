@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 
-public class Personalizar : AppCompatActivity() {
+class Personalizar : AppCompatActivity() {
 
 
 
