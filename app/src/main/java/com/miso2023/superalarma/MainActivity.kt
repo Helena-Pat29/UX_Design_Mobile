@@ -14,15 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         // Included card layout references
         val crearAlarmaCard: View = findViewById(R.id.crear_alarma_card)
-        val personalizarAlarmaCard: View = findViewById(R.id.personalizar_alarma_card)
-        val editarAlarmaCard: View = findViewById(R.id.editar_alarma_card)
-        val detenerAlarmaCard: View = findViewById(R.id.detener_alarma_card)
+
 
         // Button references within each card
         val crearAlarmaButton: Button = crearAlarmaCard.findViewById(R.id.alarm_action_button)
-        val personalizarAlarmaButton: Button = personalizarAlarmaCard.findViewById(R.id.personalizar_button)
-        val editarAlarmaButton: Button = editarAlarmaCard.findViewById(R.id.alarm_action_button)
-        val detenerAlarmaButton: Button = detenerAlarmaCard.findViewById(R.id.detener_buton)
+        val personalizarAlarmaButton: Button = findViewById(R.id.personalizar_button)
+        val detenerAlarmaButton: Button = findViewById(R.id.detener_buton)
 
         // Setting onClick listeners
         crearAlarmaButton.setOnClickListener {
@@ -35,9 +32,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(personalizarAlarma)
         }
 
-        editarAlarmaButton.setOnClickListener {
-            // Logic for editing alarm
-        }
 
         detenerAlarmaButton.setOnClickListener {
             val detenerAlarma = Intent(this, Detener::class.java)

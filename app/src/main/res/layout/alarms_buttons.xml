@@ -10,20 +10,6 @@
         android:id="@+id/crear_alarma_card"
         layout="@layout/alarm_card_layout" />
 
-    <!-- Personalizar Alarma Card -->
-    <include
-        android:id="@+id/personalizar_alarma_card"
-        layout="@layout/alarm_card_layout" />
-
-    <!-- Editar Alarma Card -->
-    <include
-        android:id="@+id/editar_alarma_card"
-        layout="@layout/alarm_card_layout" />
-
-    <!-- Detener Alarma Card -->
-    <include
-        android:id="@+id/detener_alarma_card"
-        layout="@layout/alarm_card_layout" />
 
 </GridLayout>
 
