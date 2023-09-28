@@ -14,10 +14,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val getPersonalizarButton: Button = findViewById(R.id.personalizar_button)
+        val getDeternerButton: Button = findViewById(R.id.detener_buton)
 
         getPersonalizarButton.setOnClickListener {
             val personalizarAlarma = Intent(this, Personalizar::class.java)
             startActivity(personalizarAlarma)
+        }
+        getDeternerButton.setOnClickListener {
+            val detenerAlarma = Intent(this, Detener::class.java)
+            startActivity(detenerAlarma)
         }
     }
 }

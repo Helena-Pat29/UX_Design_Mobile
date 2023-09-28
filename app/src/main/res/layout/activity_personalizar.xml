@@ -5,7 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/alarmabg"
     tools:context=".Personalizar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <TextView
         android:id="@+id/textView"
@@ -152,7 +165,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/guardar"
         android:layout_width="98dp"
         android:layout_height="35dp"
         android:layout_marginTop="40dp"
@@ -167,7 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/cancelar"
         android:layout_width="98dp"
         android:layout_height="35dp"
         android:layout_marginTop="41dp"
@@ -177,7 +190,7 @@
         android:textSize="12sp"
         app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/guardar"
         app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
 
 

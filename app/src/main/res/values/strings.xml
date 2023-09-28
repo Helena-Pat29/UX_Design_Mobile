@@ -9,6 +9,7 @@
     <string name="agitar_opcion">Agitar teléfono</string>
     <string name="guardar">Guardar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="desactivar">Desactivar</string>
 
 
 </resources>
